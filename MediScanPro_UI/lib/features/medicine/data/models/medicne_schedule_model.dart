@@ -1,6 +1,6 @@
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/medicine/data/models/schedule_model.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/medicine/data/models/schedule_model.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
 
 class MedicineScheduleModel extends MedicineSchedule {
   const MedicineScheduleModel({

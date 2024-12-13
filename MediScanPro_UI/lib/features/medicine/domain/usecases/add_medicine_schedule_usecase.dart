@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/core/domain/usecase/usecase.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/repositories/medicine_repository.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/core/domain/usecase/usecase.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/features/medicine/domain/repositories/medicine_repository.dart';
 
 class AddPatientDataUseCase extends UseCase<Unit, MedicineSchedule> {
   final MedicineRepository repository;

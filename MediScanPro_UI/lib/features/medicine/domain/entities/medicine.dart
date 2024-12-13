@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
+import 'package:med_alert/core/utils/enums.dart';
 
 class Medicine extends Equatable {
   const Medicine({

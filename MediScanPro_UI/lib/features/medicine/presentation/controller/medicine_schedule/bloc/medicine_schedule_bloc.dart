@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/usecases/add_medicine_schedule_usecase.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/usecases/delete_medicine_schedule_usecase.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/features/medicine/domain/usecases/add_medicine_schedule_usecase.dart';
+import 'package:med_alert/features/medicine/domain/usecases/delete_medicine_schedule_usecase.dart';
 
 part 'medicine_schedule_event.dart';
 part 'medicine_schedule_state.dart';

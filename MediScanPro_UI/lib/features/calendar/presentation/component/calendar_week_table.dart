@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/features/calendar/presentation/controller/cubit/calendar_cubit.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/features/calendar/presentation/controller/cubit/calendar_cubit.dart';
 
 class CustomCalendar extends StatelessWidget {
   const CustomCalendar({

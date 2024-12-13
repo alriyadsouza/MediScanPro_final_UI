@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/entities/user_profile.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/features/authentication/domain/entities/user_profile.dart';
 
 abstract class AuthRepository {
   User getUserProfile();

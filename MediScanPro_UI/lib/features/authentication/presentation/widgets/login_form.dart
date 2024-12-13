@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mediscanpro_ui/core/helpers/validator.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_button.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_input_field.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_progress_indicator.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/routes.dart';
-import 'package:mediscanpro_ui/core/resources/strings.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
+import 'package:med_alert/core/helpers/validator.dart';
+import 'package:med_alert/core/presentation/widgets/custom_button.dart';
+import 'package:med_alert/core/presentation/widgets/custom_input_field.dart';
+import 'package:med_alert/core/presentation/widgets/custom_progress_indicator.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/routes.dart';
+import 'package:med_alert/core/resources/strings.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

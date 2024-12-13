@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:mediscanpro_ui/core/helpers/date_time_formatter.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/controller/all_medicines_schedule/bloc/all_medicines_schedule_bloc.dart';
-import 'package:mediscanpro_ui/features/calendar/presentation/controller/cubit/calendar_cubit.dart';
+import 'package:med_alert/core/helpers/date_time_formatter.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine.dart';
+import 'package:med_alert/features/medicine/presentation/controller/all_medicines_schedule/bloc/all_medicines_schedule_bloc.dart';
+import 'package:med_alert/features/calendar/presentation/controller/cubit/calendar_cubit.dart';
 
 part 'medicine_state.dart';
 

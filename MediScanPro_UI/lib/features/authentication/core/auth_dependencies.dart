@@ -1,14 +1,14 @@
-import 'package:mediscanpro_ui/core/services/service_locator.dart';
-import 'package:mediscanpro_ui/features/authentication/data/repository/auth_repository_impl.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/repositories/auth_repository.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/get_user_profile_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/login_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/logout_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/sign_up_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/user_state_change_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/sign_up/cubit/sign_up_cubit.dart';
+import 'package:med_alert/core/services/service_locator.dart';
+import 'package:med_alert/features/authentication/data/repository/auth_repository_impl.dart';
+import 'package:med_alert/features/authentication/domain/repositories/auth_repository.dart';
+import 'package:med_alert/features/authentication/domain/usecases/get_user_profile_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/login_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/logout_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/sign_up_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/user_state_change_usecase.dart';
+import 'package:med_alert/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
+import 'package:med_alert/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
+import 'package:med_alert/features/authentication/presentation/controller/sign_up/cubit/sign_up_cubit.dart';
 
 import '../data/datasource/auth_datasource.dart';
 

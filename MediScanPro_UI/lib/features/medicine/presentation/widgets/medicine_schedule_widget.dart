@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_progress_indicator.dart';
-import 'package:mediscanpro_ui/core/services/service_locator.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/components/medicine_schedule_section.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/controller/all_medicines_schedule/bloc/all_medicines_schedule_bloc.dart';
+import 'package:med_alert/core/presentation/widgets/custom_progress_indicator.dart';
+import 'package:med_alert/core/services/service_locator.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/medicine/presentation/components/medicine_schedule_section.dart';
+import 'package:med_alert/features/medicine/presentation/controller/all_medicines_schedule/bloc/all_medicines_schedule_bloc.dart';
 
 class DispenserWidget extends StatelessWidget {
   const DispenserWidget({

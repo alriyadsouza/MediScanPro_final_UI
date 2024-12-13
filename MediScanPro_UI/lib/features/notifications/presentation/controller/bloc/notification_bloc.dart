@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/schedule.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/entities/notification.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/usecases/cancel_notificiation_usecase.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/usecases/schedule_weekly_notification_usecase.dart';
+import 'package:med_alert/features/medicine/domain/entities/schedule.dart';
+import 'package:med_alert/features/notifications/domain/entities/notification.dart';
+import 'package:med_alert/features/notifications/domain/usecases/cancel_notificiation_usecase.dart';
+import 'package:med_alert/features/notifications/domain/usecases/schedule_weekly_notification_usecase.dart';
 
 part 'notification_event.dart';
 part 'notification_state.dart';

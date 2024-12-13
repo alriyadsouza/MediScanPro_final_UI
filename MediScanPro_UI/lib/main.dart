@@ -1,18 +1,18 @@
-import 'package:mediscanpro_ui/core/resources/router.dart';
-import 'package:mediscanpro_ui/core/resources/theme.dart';
-import 'package:mediscanpro_ui/core/services/bloc_observer.dart';
-import 'package:mediscanpro_ui/core/services/local_notification_services.dart';
-import 'package:mediscanpro_ui/core/services/service_locator.dart';
+import 'package:med_alert/core/presentation/view/welcome_view.dart';
+import 'package:med_alert/core/resources/theme.dart';
+import 'package:med_alert/core/services/bloc_observer.dart';
+import 'package:med_alert/core/services/local_notification_services.dart';
+import 'package:med_alert/core/services/service_locator.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:med_alert/features/authentication/presentation/view/login_view.dart';
 
-import 'core/resources/router.dart';
-import 'core/resources/theme.dart';
-import 'core/services/bloc_observer.dart';
-import 'core/services/local_notification_services.dart';
-import 'core/services/service_locator.dart';
+import 'features/authentication/core/auth_dependencies.dart';
+import 'features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
+import 'features/authentication/presentation/controller/sign_up/cubit/sign_up_cubit.dart';
+import 'features/authentication/presentation/view/register_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,10 +33,10 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp.router(
-          routerConfig: sl<AppRouter>().router,
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.getThemeData(),
+          home: WelcomeView(), // Set RegisterView as the initial screen
         );
       },
     );

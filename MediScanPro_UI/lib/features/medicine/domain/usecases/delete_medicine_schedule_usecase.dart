@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/core/domain/usecase/usecase.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/repositories/medicine_repository.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/core/domain/usecase/usecase.dart';
+import 'package:med_alert/features/medicine/domain/repositories/medicine_repository.dart';
 
 class DeleteDispenserUseCase extends UseCase<Unit, String> {
   final MedicineRepository dispenserRepository;

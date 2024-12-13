@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/card_section.dart';
-import 'package:mediscanpro_ui/core/resources/messages.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/components/add_medicine_tile.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/components/medicine_schedule_tile.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/empty_tile.dart';
+import 'package:med_alert/core/presentation/widgets/card_section.dart';
+import 'package:med_alert/core/resources/messages.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/features/medicine/presentation/components/add_medicine_tile.dart';
+import 'package:med_alert/features/medicine/presentation/components/medicine_schedule_tile.dart';
+import 'package:med_alert/core/presentation/widgets/empty_tile.dart';
 
 class MedicineScheduleSection extends StatelessWidget {
   const MedicineScheduleSection({

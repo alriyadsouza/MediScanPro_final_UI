@@ -1,4 +1,4 @@
-import 'package:mediscanpro_ui/features/medicine/domain/entities/schedule.dart';
+import 'package:med_alert/features/medicine/domain/entities/schedule.dart';
 
 class ScheduleModel extends Schedule {
   const ScheduleModel({

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mediscanpro_ui/core/helpers/validator.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_button.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_input_field.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_progress_indicator.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/routes.dart';
-import 'package:mediscanpro_ui/core/resources/strings.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/sign_up/cubit/sign_up_cubit.dart';
+import 'package:med_alert/core/helpers/validator.dart';
+import 'package:med_alert/core/presentation/widgets/custom_button.dart';
+import 'package:med_alert/core/presentation/widgets/custom_input_field.dart';
+import 'package:med_alert/core/presentation/widgets/custom_progress_indicator.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/routes.dart';
+import 'package:med_alert/core/resources/strings.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/authentication/presentation/controller/sign_up/cubit/sign_up_cubit.dart';
 
 class RegisterForm extends StatelessWidget {
   const RegisterForm({
@@ -25,12 +25,12 @@ class RegisterForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    return Form(
+    return SingleChildScrollView(
       key: cubit.formKey,
       child: Container(
         margin: AppMargin.largeH.w,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             _loginHeaderTitle(textTheme),
             SizedBox(height: AppHeight.h32.h),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mediscanpro_ui/core/helpers/date_time_formatter.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/card_section.dart';
-import 'package:mediscanpro_ui/core/resources/strings.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/empty_tile.dart';
-import 'package:mediscanpro_ui/features/medicine/presentation/components/medicine_tile.dart';
+import 'package:med_alert/core/helpers/date_time_formatter.dart';
+import 'package:med_alert/core/presentation/widgets/card_section.dart';
+import 'package:med_alert/core/resources/strings.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine.dart';
+import 'package:med_alert/core/presentation/widgets/empty_tile.dart';
+import 'package:med_alert/features/medicine/presentation/components/medicine_tile.dart';
 
 class MedicineSection extends StatelessWidget {
   const MedicineSection({

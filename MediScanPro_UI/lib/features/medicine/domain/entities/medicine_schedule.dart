@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/schedule.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/medicine/domain/entities/schedule.dart';
 
 class MedicineSchedule extends Equatable {
   const MedicineSchedule({

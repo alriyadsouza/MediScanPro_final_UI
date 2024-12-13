@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/schedule.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/entities/notification.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/features/medicine/domain/entities/schedule.dart';
+import 'package:med_alert/features/notifications/domain/entities/notification.dart';
 
 abstract class NotificationRepository {
   Future<Either<Failure, Unit>> scheduleWeeklyNotification(

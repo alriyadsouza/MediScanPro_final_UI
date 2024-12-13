@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_app_bar.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/messages.dart';
-import 'package:mediscanpro_ui/core/services/service_locator.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/core/utils/snack_bar_utils.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/widgets/login_form.dart';
+import 'package:med_alert/core/presentation/widgets/custom_app_bar.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/messages.dart';
+import 'package:med_alert/core/services/service_locator.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/core/utils/snack_bar_utils.dart';
+import 'package:med_alert/features/authentication/presentation/controller/login/cubit/login_cubit.dart';
+import 'package:med_alert/features/authentication/presentation/widgets/login_form.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -18,22 +18,24 @@ class LoginView extends StatelessWidget {
       create: (context) => sl<LoginCubit>(),
       child: Scaffold(
         backgroundColor: AppColors.backgroundSecondary,
-        appBar:
-            const CustomAppBar(backgroundColor: AppColors.backgroundSecondary),
-        body: Center(
+        appBar: const CustomAppBar(backgroundColor: AppColors.backgroundSecondary),
+        body: SafeArea(
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
-            child: BlocConsumer<LoginCubit, LoginState>(
-              listener: (context, state) {
-                if (state.status == AuthStatus.failure) {
-                  SnackBarUtils.showErrorSnackBar(
-                      context, AppMessages.loginFailed, state.message);
-                }
-              },
-              builder: (context, state) {
-                final cubit = context.read<LoginCubit>();
-                return LoginForm(cubit: cubit, state: state);
-              },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: BlocConsumer<LoginCubit, LoginState>(
+                listener: (context, state) {
+                  if (state.status == AuthStatus.failure) {
+                    SnackBarUtils.showErrorSnackBar(
+                        context, AppMessages.loginFailed, state.message);
+                  }
+                },
+                builder: (context, state) {
+                  final cubit = context.read<LoginCubit>();
+                  return LoginForm(cubit: cubit, state: state);
+                },
+              ),
             ),
           ),
         ),

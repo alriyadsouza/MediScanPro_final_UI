@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/features/medicine/data/models/medicne_schedule_model.dart';
+import 'package:med_alert/features/medicine/data/models/medicne_schedule_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine_schedule.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine_schedule.dart';
 
 abstract class MedicineRemoteDataSource {
   Future<Unit> addMedicineSchedule(MedicineSchedule dispenser);

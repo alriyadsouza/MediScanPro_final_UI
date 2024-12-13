@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:mediscanpro_ui/core/data/error/exceptions.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/core/resources/messages.dart';
-import 'package:mediscanpro_ui/features/authentication/data/datasource/auth_datasource.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/entities/user_profile.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/repositories/auth_repository.dart';
+import 'package:med_alert/core/data/error/exceptions.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/core/resources/messages.dart';
+import 'package:med_alert/features/authentication/data/datasource/auth_datasource.dart';
+import 'package:med_alert/features/authentication/domain/entities/user_profile.dart';
+import 'package:med_alert/features/authentication/domain/repositories/auth_repository.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   AuthRepositoryImpl(this.authDataSourceImpl);

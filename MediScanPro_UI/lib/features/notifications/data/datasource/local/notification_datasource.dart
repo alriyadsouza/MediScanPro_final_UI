@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/core/data/error/exceptions.dart';
-import 'package:mediscanpro_ui/core/helpers/time_zone_helper.dart';
-import 'package:mediscanpro_ui/core/services/local_notification_services.dart';
-import 'package:mediscanpro_ui/features/medicine/domain/entities/schedule.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/entities/notification.dart';
+import 'package:med_alert/core/data/error/exceptions.dart';
+import 'package:med_alert/core/helpers/time_zone_helper.dart';
+import 'package:med_alert/core/services/local_notification_services.dart';
+import 'package:med_alert/features/medicine/domain/entities/schedule.dart';
+import 'package:med_alert/features/notifications/domain/entities/notification.dart';
 
 abstract class LocalNotificationDataSource {
   Future<Unit> scheduleWeeklyNotification(NotificationData notificationData);

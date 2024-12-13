@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/core/utils/bottom_sheet_utils.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/core/utils/bottom_sheet_utils.dart';
 
 import '../widgets/medicine_form.dart';
 

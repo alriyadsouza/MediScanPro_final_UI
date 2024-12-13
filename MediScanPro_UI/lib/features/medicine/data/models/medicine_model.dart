@@ -1,4 +1,4 @@
-import 'package:mediscanpro_ui/features/medicine/domain/entities/medicine.dart';
+import 'package:med_alert/features/medicine/domain/entities/medicine.dart';
 
 class MedicineModel extends Medicine {
   const MedicineModel({

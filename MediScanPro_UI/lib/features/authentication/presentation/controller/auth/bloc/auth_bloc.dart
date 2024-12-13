@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:equatable/equatable.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mediscanpro_ui/core/domain/usecase/usecase.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/entities/user_profile.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/get_user_profile_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/user_state_change_usecase.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/usecases/logout_usecase.dart';
+import 'package:med_alert/core/domain/usecase/usecase.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/features/authentication/domain/entities/user_profile.dart';
+import 'package:med_alert/features/authentication/domain/usecases/get_user_profile_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/user_state_change_usecase.dart';
+import 'package:med_alert/features/authentication/domain/usecases/logout_usecase.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';

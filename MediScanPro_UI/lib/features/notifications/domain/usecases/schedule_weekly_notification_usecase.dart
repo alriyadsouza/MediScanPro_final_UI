@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:mediscanpro_ui/core/data/error/failure.dart';
-import 'package:mediscanpro_ui/core/domain/usecase/usecase.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/entities/notification.dart';
-import 'package:mediscanpro_ui/features/notifications/domain/repository/notification_repository.dart';
+import 'package:med_alert/core/data/error/failure.dart';
+import 'package:med_alert/core/domain/usecase/usecase.dart';
+import 'package:med_alert/features/notifications/domain/entities/notification.dart';
+import 'package:med_alert/features/notifications/domain/repository/notification_repository.dart';
 
 class ScheduleWeeklyNotificationUseCase
     extends UseCase<Unit, NotificationData> {
