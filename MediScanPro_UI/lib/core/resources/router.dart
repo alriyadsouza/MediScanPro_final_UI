@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:mediscanpro_ui/core/presentation/view/home_view.dart';
-import 'package:mediscanpro_ui/core/presentation/view/settings_view.dart';
-import 'package:mediscanpro_ui/core/presentation/view/welcome_view.dart';
-import 'package:mediscanpro_ui/core/resources/routes.dart';
-import 'package:mediscanpro_ui/core/utils/route_utils.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/view/login_view.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/view/register_view.dart';
+import 'package:med_alert/core/presentation/view/home_view.dart';
+import 'package:med_alert/core/presentation/view/settings_view.dart';
+import 'package:med_alert/core/presentation/view/welcome_view.dart';
+import 'package:med_alert/core/resources/routes.dart';
+import 'package:med_alert/core/utils/route_utils.dart';
+import 'package:med_alert/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
+import 'package:med_alert/features/authentication/presentation/view/login_view.dart';
+import 'package:med_alert/features/authentication/presentation/view/register_view.dart';
 
 class AppRouter {
   final AuthBloc authBloc;

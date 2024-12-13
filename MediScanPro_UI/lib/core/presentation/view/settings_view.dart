@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_back_button.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/setting_item.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/features/authentication/domain/entities/user_profile.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
+import 'package:med_alert/core/presentation/widgets/custom_back_button.dart';
+import 'package:med_alert/core/presentation/widgets/setting_item.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/features/authentication/domain/entities/user_profile.dart';
+import 'package:med_alert/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({
@@ -21,7 +21,7 @@ class SettingsView extends StatelessWidget {
     final UserProfile user = authBloc.state.user;
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: AppHeight.h50.h,
+        toolbarHeight: AppHeight.h24.h,
         title: Text('settings', style: titleStyle),
         centerTitle: true,
         leading: const CustomBackButton(),

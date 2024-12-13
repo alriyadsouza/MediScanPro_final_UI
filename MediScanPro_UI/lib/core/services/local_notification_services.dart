@@ -1,6 +1,6 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:mediscanpro_ui/core/helpers/id_generator.dart';
-import 'package:mediscanpro_ui/core/helpers/time_zone_helper.dart';
+import 'package:med_alert/core/helpers/id_generator.dart';
+import 'package:med_alert/core/helpers/time_zone_helper.dart';
 import 'package:timezone/timezone.dart' as tz;
 
 class LocalNotificationServices {

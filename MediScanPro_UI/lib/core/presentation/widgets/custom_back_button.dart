@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/values.dart';
 
 class CustomBackButton extends StatelessWidget {
   const CustomBackButton({

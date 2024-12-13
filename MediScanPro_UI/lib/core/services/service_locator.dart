@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_it/get_it.dart';
 
-import 'package:mediscanpro_ui/core/data/remote/network_connection.dart';
-import 'package:mediscanpro_ui/core/resources/router.dart';
-import 'package:mediscanpro_ui/core/services/local_notification_services.dart';
-import 'package:mediscanpro_ui/core/utils/route_utils.dart';
-import 'package:mediscanpro_ui/features/authentication/core/auth_dependencies.dart';
-import 'package:mediscanpro_ui/features/calendar/core/calendar_dependencies.dart';
-import 'package:mediscanpro_ui/features/medicine/core/medicine_dependencies.dart';
-import 'package:mediscanpro_ui/features/notifications/core/notification_dependencies.dart';
+import 'package:med_alert/core/data/remote/network_connection.dart';
+import 'package:med_alert/core/resources/router.dart';
+import 'package:med_alert/core/services/local_notification_services.dart';
+import 'package:med_alert/core/utils/route_utils.dart';
+import 'package:med_alert/features/authentication/core/auth_dependencies.dart';
+import 'package:med_alert/features/calendar/core/calendar_dependencies.dart';
+import 'package:med_alert/features/medicine/core/medicine_dependencies.dart';
+import 'package:med_alert/features/notifications/core/notification_dependencies.dart';
 
 GetIt sl = GetIt.instance;
 

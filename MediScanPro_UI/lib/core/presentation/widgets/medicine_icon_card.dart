@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/core/utils/enums.dart';
-import 'package:mediscanpro_ui/core/utils/extensions.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/core/utils/enums.dart';
+import 'package:med_alert/core/utils/extensions.dart';
 
 class MedicineIconCard extends StatelessWidget {
   const MedicineIconCard({

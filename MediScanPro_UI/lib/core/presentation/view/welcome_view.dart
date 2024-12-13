@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 
-import 'package:mediscanpro_ui/core/presentation/widgets/custom_button.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/svg_image.dart';
-import 'package:mediscanpro_ui/core/resources/assets.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
-import 'package:mediscanpro_ui/core/resources/routes.dart';
-import 'package:mediscanpro_ui/core/resources/strings.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
+import 'package:med_alert/core/presentation/widgets/custom_button.dart';
+import 'package:med_alert/core/presentation/widgets/svg_image.dart';
+import 'package:med_alert/core/resources/assets.dart';
+import 'package:med_alert/core/resources/colors.dart';
+import 'package:med_alert/core/resources/strings.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/features/authentication/presentation/view/login_view.dart';
+import 'package:med_alert/features/authentication/presentation/view/register_view.dart';
 
 class WelcomeView extends StatelessWidget {
   const WelcomeView({super.key});
@@ -53,35 +53,48 @@ class WelcomeView extends StatelessWidget {
       ),
     );
   }
-}
 
-Widget _authButtonRaw(BuildContext context) {
-  return Container(
-    decoration: BoxDecoration(
-      color: AppColors.white,
-      border: Border.all(color: AppColors.white),
-      borderRadius: const BorderRadius.all(Radius.circular(11)).w,
-    ),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Flexible(
-          child: CustomButton(
-            lable: AppStrings.registerTitle,
-            onTap: () => context.pushNamed(AppRoutes.register.name),
-            backgroundColor: AppColors.accent,
-            textColor: AppColors.white,
+  // Updated method for handling authentication button navigation directly without GoRouter
+  Widget _authButtonRaw(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.white,
+        border: Border.all(color: AppColors.white),
+        borderRadius: const BorderRadius.all(Radius.circular(11)).w,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Flexible(
+            child: CustomButton(
+              lable: AppStrings.registerTitle,
+              onTap: () {
+                // Directly navigate to the RegisterForm without router
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RegisterView()),
+                );
+              },
+              backgroundColor: AppColors.accent,
+              textColor: AppColors.white,
+            ),
           ),
-        ),
-        Flexible(
-          child: CustomButton(
-            lable: AppStrings.login,
-            onTap: () => context.pushNamed(AppRoutes.login.name),
-            backgroundColor: AppColors.white,
-            textColor: AppColors.black,
+          Flexible(
+            child: CustomButton(
+              lable: AppStrings.login,
+              onTap: () {
+                // Directly navigate to the LoginForm without router
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginView()),
+                );
+              },
+              backgroundColor: AppColors.white,
+              textColor: AppColors.black,
+            ),
           ),
-        ),
-      ],
-    ),
-  );
+        ],
+      ),
+    );
+  }
 }

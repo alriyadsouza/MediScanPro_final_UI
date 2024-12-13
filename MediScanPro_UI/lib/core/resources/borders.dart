@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mediscanpro_ui/core/resources/colors.dart';
+import 'package:med_alert/core/resources/colors.dart';
 
 class AppBorders {
   static const borderDirectionalMiddel = BorderDirectional(

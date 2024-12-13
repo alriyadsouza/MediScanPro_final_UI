@@ -1,4 +1,4 @@
-import 'package:mediscanpro_ui/core/resources/strings.dart';
+import 'package:med_alert/core/resources/strings.dart';
 
 class Validator {
   static String? validateField(String? value) {

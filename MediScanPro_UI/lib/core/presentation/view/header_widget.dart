@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mediscanpro_ui/core/resources/assets.dart';
-import 'package:mediscanpro_ui/core/resources/routes.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
-import 'package:mediscanpro_ui/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
+import 'package:med_alert/core/resources/assets.dart';
+import 'package:med_alert/core/resources/routes.dart';
+import 'package:med_alert/core/resources/values.dart';
+import 'package:med_alert/features/authentication/presentation/controller/auth/bloc/auth_bloc.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/card_section_body.dart';
-import 'package:mediscanpro_ui/core/presentation/widgets/card_section_header.dart';
-import 'package:mediscanpro_ui/core/resources/values.dart';
+import 'package:med_alert/core/presentation/widgets/card_section_body.dart';
+import 'package:med_alert/core/presentation/widgets/card_section_header.dart';
+import 'package:med_alert/core/resources/values.dart';
 
 class CardSection extends StatelessWidget {
   const CardSection({

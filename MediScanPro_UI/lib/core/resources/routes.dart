@@ -12,13 +12,13 @@ extension AppRoutesX on AppRoutes {
       case AppRoutes.welcome:
         return '/welcome';
       case AppRoutes.login:
-        return 'login';
+        return '/login';
       case AppRoutes.register:
-        return 'register';
+        return '/register';
       case AppRoutes.home:
         return '/home';
       case AppRoutes.setting:
-        return 'setting';
+        return '/setting';
       default:
         return '/welcome';
     }
